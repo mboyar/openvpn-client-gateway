@@ -13,6 +13,7 @@
         1. Starting OpenVPN client:
             * Install openvpn client: ```sudo apt install openvpn```
             * Run openvpn like this: ```openvpn --config /root/client1.ovpn --daemon```
+        1  ```enxc0742bfffc6e``` similar named interface should get dynamic IP from DHCP
         1. Static ip settings:
             * ```nmtui``` is so easy-to-use network utility. You can use it to set eth0 IP to ```34.34.34.1```
             * You can also use the file ```etc/NetworkManager/system-connections/ETH0`` in git branch as an example config file.
@@ -27,4 +28,4 @@
         * GW: 34.34.34.1
         * DNS: 8.8.8.8
 
-![image]()
+![](https://lh3.googleusercontent.com/GUCXC5DaWXitSj_HCexT8fcAhlt46WIxYWWvucm0PLgXX9fokSq1JeYIgSUvoVceEK_VyllniKLa4aH6tjb-kAUSikbUuFc9ud7prUQ_8vL0dm2JP8wbFO9MG6WkaqzFjiaTJHF7vIA=w430-h641-no)
