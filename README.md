@@ -8,21 +8,21 @@
 1. Configure an OrangePi R1 as an OpenVPN Client Gateway
     1. SD Image process
         1. Download Armbian Ubuntu Server image from https://www.armbian.com/orange-pi-r1/
-        * Burn the thw downloaded image file to a proper SD card by using Etcher (https://www.balena.io/etcher/)
-    * After login on Opi, you should do the steps below:
+        1. Burn the thw downloaded image file to a proper SD card by using Etcher (https://www.balena.io/etcher/)
+    1. After login on Opi, you should do the steps below:
         1. Starting OpenVPN client:
             * Install openvpn client: ```sudo apt install openvpn```
             * Run openvpn like this: ```openvpn --config /root/client1.ovpn --daemon```
-        * Static ip settings:
+        1. Static ip settings:
             * ```nmtui``` is so easy-to-use network utility. You can use it to set eth0 IP to ```34.34.34.1```
             * You can also use the file ```etc/NetworkManager/system-connections/ETH0`` in git branch as an example config file.
-        * iptables setting
+        1. Routing settings:
             * Thx to https://unix.stackexchange.com/questions/283801/iptables-forward-traffic-to-vpn-tunnel-if-open
             * Find the proper setting file ```root/iptables-tun0.sh``` in git branch 
-    * Starting gateway after reboot
+    1. Starting gateway after reboot
         * You can use an examle init script in branch ```etc/rc.local```
-* Using OpenVPN Client Gateway with any device:
-    1. Set your e.g. TV box or whatever's
+1. Using the OpenVPN Client Gateway with any device:
+    * Set your e.g. TV box or whatever's
         * IP: 34.34.34.34
         * GW: 34.34.34.1
         * DNS: 8.8.8.8
