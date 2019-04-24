@@ -13,7 +13,7 @@
         1. ```enxc0742bfffc6e``` similar named interface should get dynamic IP from DHCP
         1. Static ip settings:
             * ```nmtui``` is so easy-to-use network utility. You can use it to set ```eth0``` interface IP to ```34.34.34.1```
-            * You can also use the file ```etc/NetworkManager/system-connections/ETH0`` in git branch as an example config file.
+            * You can also use the file ```etc/NetworkManager/system-connections/ETH0``` in git branch as an example config file.
         1. Starting OpenVPN client:
             * Install openvpn client: ```sudo apt install openvpn```
             * Run openvpn like this: ```openvpn --config /root/client1.ovpn --daemon```            
