@@ -11,10 +11,10 @@
 #
 # By default this script does nothing.
 
+rfkill block wifi
+
 openvpn --config /root/client1.ovpn --daemon
 sleep 5
 /root/iptables-tun0.sh
-
-rfkill block wifi
 
 exit 0
